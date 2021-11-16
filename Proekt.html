@@ -55,13 +55,45 @@
                  font-family: 'Times New Roman', Times, serif;
              }
              
+             .popup1,.popup6,.popup2,.popup3,.popup4,.popup5{
+     background-color: rgba(0,0,0,0.6);
+     width: 100%;
+     height: 100%;
+    position: absolute;
+     display: none;
+     justify-content: center;
+     text-align: center;
+     align-items: center;
+    
+ }
+ .popup-1{
+     height: 250px;
+     width: 500px;
+     background:  #ffff;
+     padding: 20px;
+     border-radius: 5px;
+     position: absolute;
+ }
+
+ .close{
+     position: absolute;
+     top: -15px;
+     right: -15px;
+    height: 20px;
+    background: white;
+    width: 20px;
+    border-radius: 50%;
+ }
+            
+             
             
         
         </style>
     </head>
+    <script src ="JS.js"></script>
     <body>
         <div class = "background">
-        <section class="main1"id="home">
+        <section id="home">
             <h1 class="main2">Добредојдовте на мојата WEB страна</h1>
             <ul class="main">
                 <li> <a href="#home">Дома</a></li>
@@ -107,5 +139,183 @@
                 <li>Научна фантастика</li>
             </ul>
         </details>
+        <details>
+            <summary class="main4"><strong>Храна</strong></summary>
+            <h3 class="main4">Здрава исхрана</h3>
+            <table>
+                <tr>
+                    <td><img src="Sliki/hrana 1 (1).jpg" height="300px" width="500px" alt="#"></td>
+                    <td><img src="Sliki/hrana 2.jpg" height="300px" width="500px" alt="#"></td>
+                    <td><img src="Sliki/hrana 3.jpg" height="300px" width="500px" alt="#"></td>
+                </tr>
+            </table>
+            <article style="margin-top: 5%;">
+                Правилната или здравата  исхрана е начин на исхрана со кој во организмот се внесуваат сите состојки кои се потребни за раст,
+                 развој и одржување на нормалната функција на организмот. Луѓето кои не се хранат правилно имаат малку енергија, раздразливи 
+                 се и полесно се разболуваат. Нутрицизмот како наука се занимава со проучување на тоа како организмот ги асимилира и ги
+                  искористува  храната и течностите со цел да се обезбеди нормално функционирање и развој на телото како и да се обезбеди
+                   заштита и подобро здравје. Терминот правилна исхрана се повеќе се употребува во научните кругови и се разликува од терминот
+                    здрава исхрана кој често е поврзан со разни движења и помалку не научни спознанија.Основната цел на нутриционизмот е да 
+                    открие како храната делува на настанување и на превенирањето на болестите. Правилната исхрана онаква каква што ја застапуваат
+                     нутриционистите се темели на научни сознанија и нејзина цел и е да овозможи подолг, поздрав и поквалитетен живот на секој поединец,
+                      на групи со посебни прехрамбени потреби како и на целата популација. Бидејќи целта на секој нутриционист е подобро здравје на 
+                      поединецот тоа значи дека не постои една иста шема за начинот на исхрана на различни луѓе. Нутригенетиката се занимава со проучување 
+                      на влијанието на храната врз поединците како носители на различна генетска структура и потребата од индивидуален план за прехрана со цел
+                       да се постигнат позитивни резултати. Освен западните науки многу знаења за влијанието на храната доаѓаат од со векови применуваните
+                        знаења на Источните цивилизации како што е Ајурведата кои иако кај нас се нарекуваат алтернативни тие се основа за  современите текови во науката за исхраната.
+                     Денес целокупните резултати од истражувањето на нутриционистите се собрани во таканаречени препораки за исхрана како што се Американските
+                      препораки за исхрана, Препораките на Македонскиот завод за јавно здравје, препораките на Светската здравствена организација итн. Овие препораки освен во напишан 
+                      облик можат да се прикажат во графички облик преку таканаречената Пирамида на исхраната која постојано се модифицира во согласност со најновите научни истражувања.
+            </article>
+            <aside><strong>Текстот е превземен од следниов </strong><a href="https://bioaktiv.weebly.com/106410901086-1077-107910761088107210741072-10931088107210851072.html"> ЛИНК</a>.</aside>
+        </details>
+    </section>
+
+    <section id="galerija">
+    <div class="popup1">
+        <div class="popup-1">
+            <p>
+                <textarea id="text1" placeholder="Напишете коментар " name="komentar" rows="8" cols="65" required></textarea>
+            </p>
+            <p>
+                <input onclick="komentar(1,1),zatvori(1)" style="width: 100px;margin-left: 10px;" class="kopce" type="submit" value="Коментирај">
+            </p>
+            <input onclick="zatvori(1)" type="image" src="sliki/close.png" alt="close" class="close">
+        </div>
+    </div>
+    
+    
+
+    <div class="popup2">
+        <div class="popup-1">
+            <p>
+                <textarea id="text2" placeholder="Напишете коментар " name="komentar" rows="8" cols="65" required></textarea>
+            </p>
+            <p>
+                <input onclick="komentar(2,2),zatvori(2)" style="width: 100px;margin-left: 10px;" class="kopce" type="submit" value="Коментирај">
+            </p>
+            <input onclick="zatvori(2)" type="image" src="sliki/close.png" alt="close" class="close">
+        </div>
+    </div>
+
+    <div class="popup3">
+        <div class="popup-1">
+            <p>
+                <textarea id="text3" placeholder="Напишете коментар " name="komentar" rows="8" cols="65" required></textarea>
+            </p>
+            <p>
+                <input onclick="komentar(3,3),zatvori(3)" style="width: 100px;margin-left: 10px;" class="kopce" type="submit" value="Коментирај">
+            </p>
+            <input onclick="zatvori(3)" type="image" src="sliki/close.png" alt="close" class="close">
+        </div>
+    </div>
+
+    <div class="popup4">
+        <div class="popup-1">
+            <p>
+                <textarea id="text4" placeholder="Напишете коментар " name="komentar" rows="8" cols="65" required></textarea>
+            </p>
+            <p>
+                <input onclick="komentar(4,4),zatvori(4)" style="width: 100px;margin-left: 10px;" class="kopce" type="submit" value="Коментирај">
+            </p>
+            <input onclick="zatvori(4)" type="image" src="sliki/close.png" alt="close" class="close">
+        </div>
+    </div>
+
+       
+            <h2 class="main3">Галерија</h2>
+            <table>
+                <tr>
+                    <td><a href="Sliki/wallpaper1.jpeg" target="blank"> <img src="Sliki/wallpaper1.jpeg" height="300px" width="300px" alt="#"></a><br>
+                        <input onclick="Broj(1)" type="image" name="sl1" class="like" src="Sliki/Like.jpg" height="60px" width="60px" alt="#">
+                        <input onclick="otvori(1,1)" type="image" class="like" src="Sliki/comment.jpg" height="60px" width="60px" alt="#" >
+                   <p style="margin-left: 10px"> <label><strong>Likes:</strong> <span id="brlike1">0</span> 
+                   </label></p>
+                   <details>
+                    <summary><strong>Коментари</strong></summary>
+                    <div id="kom1">
+                    </div>
+                    </details></td>
+
+                    <td><a href="Sliki/wallpaper2.jpeg" target="blank"> <img src="Sliki/wallpaper2.jpeg" height="300px" width="300px" alt="#"></a><br>
+                        <input onclick="Broj(2)" type="image" name="sl1" class="like" src="Sliki/Like.jpg" height="60px" width="60px" alt="#">
+                        <input onclick="otvori(2,2)" type="image" class="like" src="Sliki/comment.jpg" height="60px" width="60px" alt="#" >
+                   <p style="margin-left: 10px"> <label><strong>Likes:</strong> <span id="brlike2">0</span> 
+                   </label></p>
+                   <details>
+                    <summary><strong>Коментари</strong></summary>
+                    <div id="kom2">
+                    </div>
+                    </details></td>
+
+                    <td><a href="Sliki/wallpaper3.jpeg" target="blank"> <img src="Sliki/wallpaper3.jpeg" height="300px" width="300px" alt="#"></a><br>
+                        <input onclick="Broj(3)" type="image" name="sl1" class="like" src="Sliki/Like.jpg" height="60px" width="60px" alt="#">
+                        <input onclick="otvori(3,3)" type="image" class="like" src="Sliki/comment.jpg" height="60px" width="60px" alt="#" >
+                   <p style="margin-left: 10px"> <label><strong>Likes:</strong> <span id="brlike3">0</span> 
+                   </label></p>
+                   <details>
+                    <summary><strong>Коментари</strong></summary>
+                    <div id="kom3">
+                    </div>
+                    </details></td>
+
+                    <td><a href="Sliki/wallpaper4.jpeg" target="blank"> <img src="Sliki/wallpaper4.jpeg" height="300px" width="300px" alt="#"></a><br>
+                        <input onclick="Broj(4)" type="image" name="sl1" class="like" src="Sliki/Like.jpg" height="60px" width="60px" alt="#">
+                        <input onclick="otvori(4,4)" type="image" class="like" src="Sliki/comment.jpg" height="60px" width="60px" alt="#" >
+                   <p style="margin-left: 10px"> <label><strong>Likes:</strong> <span id="brlike4">0</span> 
+                   </label></p>
+                   <details>
+                    <summary><strong>Коментари</strong></summary>
+                    <div id="kom4">
+                    </div>
+                    </details></td>
+                </tr>
+            </table>
+    </section>
+                    
+
+            <section id="blog">
+                <h2 class="main3">Блог</h2>
+                <p><label>
+                    <input id="tema" style="margin-left: 0px;width: 250px ;"class="input" type="text" placeholder="Тема">
+                    </label>
+                </p>
+                <p><label>Датум:
+                    <input id="datum" type="date" value="datum" required><br>
+                    <input onclick="blog()" class="kopce" type="submit" value="испрати">
+                    <input onclick="izbrisiBlog()" class ="kopce" type="reset" value="избриши">
+                </label></p>
+                <div id="blogtekst">
+
+                </div>
+                </section>
+        
+                <section id="anketa">
+                    <form method= "post" action="#">
+                        <h2 class="main3">Анкета за посетители</h2>
+                        <p style="position: relative;margin-left: 20px; font-weight: bold;">Внесете ваши лични податоци:</p>
+                        <input class="input" type="text" placeholder="Име"><br>
+                        <input class="input" type="text"  placeholder="Презиме"><br>
+                        <input class="input" type="text"  placeholder="Возраст"><br>
+                        
+                        <p><label>Оценка за страната:
+                            1<input type="range" min="0" max="10" value="5">10
+                        </label></p>
+                        <p>
+                            <textarea placeholder="Ваше мислење/коментар за страната " name="tema" rows="5" cols="100"></textarea><br>
+                            <input class="kopce" type="submit" value="испрати">
+                            <input class ="kopce" type="reset" value="избриши">
+                        </p>    
+                    </section>        
+            </section>
+            <section id="kontakt">
+                <h2 class="main3">Контакт</h2>
+              <p><a href="https://www.facebook.com/aleksandar.rakov/"><img style="position:relative;margin-left: 50px;"img src="Sliki/Facebook.png" height="50px" width="60px" alt="#"></a>
+                <a href="https://www.instagram.com/aleksandar_rakov/?hl=en"><img style="position:relative;margin-left: 50px;"img src="Sliki/Instagram.jpg" height="50px" width="60px" alt="#"></a>
+              <p style="position: relative; margin-left:10px;margin-top: 50px;font-size: 20px;">Можете да ме исконтактирате на следниов <a href="mailto:Aleksandar.rakov@icloud.com"> ЛИНК</a></p>
+            </section>
+        </body>
+    </html>
+    
         </body>
         </html>
