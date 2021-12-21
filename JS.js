@@ -1,4 +1,3 @@
-
 function Broj(sl){
     var br=document.getElementById("brlike"+sl).innerHTML;
    br++;
@@ -44,24 +43,19 @@ function otvori(br,a) {
    }
  }
 
- function izbrisiBlog(){
-   document.getElementById("blogtxt").value='';
-   document.getElementById("datum").value='';
-   document.getElementById("tema").value='';
- }
 
  window.onbeforeunload=function(){   
    localStorage.setItem("br1", $('#brlike1').text());
    localStorage.setItem("br2", $('#brlike2').text()); 
    localStorage.setItem("br3", $('#brlike3').text());
    localStorage.setItem("br4", $('#brlike4').text()); 
-   localStorage.setItem("br5", $('#brlike5').text());
-   localStorage.setItem("br6", $('#brlike6').text()); 
    localStorage.setItem("komentar1", $('#kom1').html());
    localStorage.setItem("komentar2", $('#kom2').html());
    localStorage.setItem("komentar3", $('#kom3').html());
    localStorage.setItem("komentar4", $('#kom4').html());
    localStorage.setItem("blog", $('#blogtekst').html());
+   
+   
  }
 
  window.onload=function(){
@@ -85,3 +79,4 @@ function otvori(br,a) {
    if(komentar4 != null) $('#kom4').html(`${komentar4}`);
    if(blog != null) $('#blogtekst').html(`${blog}`);
  }
+

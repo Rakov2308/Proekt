@@ -61,9 +61,9 @@
      height: 100%;
     position: absolute;
      display: none;
-     justify-content: center;
+     justify-content:center;
      text-align: center;
-     align-items: center;
+     align-items: flex-end;
     
  }
  .popup-1{
@@ -84,13 +84,24 @@
     width: 20px;
     border-radius: 50%;
  }
-            
-             
-            
-        
+ .gallery{
+    margin:20px;
+ }
+ .gallery img{
+     width: 230px;
+    padding: 5px;
+    transition: 1s;
+    transform: scale(1.1);
+ }
+
+ 
+ 
         </style>
+        <link rel="stylesheet" href="CSS/lightbox.min.css">
+    
     </head>
     <script src ="JS.js"></script>
+    <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
     <body>
         <div class = "background">
         <section id="home">
@@ -150,22 +161,22 @@
                 </tr>
             </table>
             <article style="margin-top: 5%;">
-                Правилната или здравата  исхрана е начин на исхрана со кој во организмот се внесуваат сите состојки кои се потребни за раст,
+                 Правилната или здравата  исхрана е начин на исхрана со кој во организмот се внесуваат сите состојки кои се потребни за раст,
                  развој и одржување на нормалната функција на организмот. Луѓето кои не се хранат правилно имаат малку енергија, раздразливи 
                  се и полесно се разболуваат. Нутрицизмот како наука се занимава со проучување на тоа како организмот ги асимилира и ги
-                  искористува  храната и течностите со цел да се обезбеди нормално функционирање и развој на телото како и да се обезбеди
-                   заштита и подобро здравје. Терминот правилна исхрана се повеќе се употребува во научните кругови и се разликува од терминот
-                    здрава исхрана кој често е поврзан со разни движења и помалку не научни спознанија.Основната цел на нутриционизмот е да 
-                    открие како храната делува на настанување и на превенирањето на болестите. Правилната исхрана онаква каква што ја застапуваат
-                     нутриционистите се темели на научни сознанија и нејзина цел и е да овозможи подолг, поздрав и поквалитетен живот на секој поединец,
-                      на групи со посебни прехрамбени потреби како и на целата популација. Бидејќи целта на секој нутриционист е подобро здравје на 
-                      поединецот тоа значи дека не постои една иста шема за начинот на исхрана на различни луѓе. Нутригенетиката се занимава со проучување 
-                      на влијанието на храната врз поединците како носители на различна генетска структура и потребата од индивидуален план за прехрана со цел
-                       да се постигнат позитивни резултати. Освен западните науки многу знаења за влијанието на храната доаѓаат од со векови применуваните
-                        знаења на Источните цивилизации како што е Ајурведата кои иако кај нас се нарекуваат алтернативни тие се основа за  современите текови во науката за исхраната.
-                     Денес целокупните резултати од истражувањето на нутриционистите се собрани во таканаречени препораки за исхрана како што се Американските
-                      препораки за исхрана, Препораките на Македонскиот завод за јавно здравје, препораките на Светската здравствена организација итн. Овие препораки освен во напишан 
-                      облик можат да се прикажат во графички облик преку таканаречената Пирамида на исхраната која постојано се модифицира во согласност со најновите научни истражувања.
+                 искористува  храната и течностите со цел да се обезбеди нормално функционирање и развој на телото како и да се обезбеди
+                 заштита и подобро здравје. Терминот правилна исхрана се повеќе се употребува во научните кругови и се разликува од терминот
+                 здрава исхрана кој често е поврзан со разни движења и помалку не научни спознанија.Основната цел на нутриционизмот е да 
+                 открие како храната делува на настанување и на превенирањето на болестите. Правилната исхрана онаква каква што ја застапуваат
+                 нутриционистите се темели на научни сознанија и нејзина цел и е да овозможи подолг, поздрав и поквалитетен живот на секој поединец,
+                 на групи со посебни прехрамбени потреби како и на целата популација. Бидејќи целта на секој нутриционист е подобро здравје на 
+                 поединецот тоа значи дека не постои една иста шема за начинот на исхрана на различни луѓе. Нутригенетиката се занимава со проучување 
+                 на влијанието на храната врз поединците како носители на различна генетска структура и потребата од индивидуален план за прехрана со цел
+                 да се постигнат позитивни резултати. Освен западните науки многу знаења за влијанието на храната доаѓаат од со векови применуваните
+                 знаења на Источните цивилизации како што е Ајурведата кои иако кај нас се нарекуваат алтернативни тие се основа за  современите текови во науката за исхраната.
+                 Денес целокупните резултати од истражувањето на нутриционистите се собрани во таканаречени препораки за исхрана како што се Американските
+                 препораки за исхрана, Препораките на Македонскиот завод за јавно здравје, препораките на Светската здравствена организација итн. Овие препораки освен во напишан 
+                 облик можат да се прикажат во графички облик преку таканаречената Пирамида на исхраната која постојано се модифицира во согласност со најновите научни истражувања.
             </article>
             <aside><strong>Текстот е превземен од следниов </strong><a href="https://bioaktiv.weebly.com/106410901086-1077-107910761088107210741072-10931088107210851072.html"> ЛИНК</a>.</aside>
         </details>
@@ -226,20 +237,27 @@
             <h2 class="main3">Галерија</h2>
             <table>
                 <tr>
-                    <td><a href="Sliki/wallpaper1.jpeg" target="blank"> <img src="Sliki/wallpaper1.jpeg" height="300px" width="300px" alt="#"></a><br>
+                    <td>
+                        <div class="gallery">
+                        <a href="Sliki/wallpaper1.jpeg" data-lightbox="sliki" target="blank">  <img src="Sliki/wallpaper1.jpeg"  height="300px" width="300px" alt="#"></a><br>
                         <input onclick="Broj(1)" type="image" name="sl1" class="like" src="Sliki/Like.jpg" height="60px" width="60px" alt="#">
                         <input onclick="otvori(1,1)" type="image" class="like" src="Sliki/comment.jpg" height="60px" width="60px" alt="#" >
+                    </div>
                    <p style="margin-left: 10px"> <label><strong>Likes:</strong> <span id="brlike1">0</span> 
                    </label></p>
                    <details>
                     <summary><strong>Коментари</strong></summary>
                     <div id="kom1">
                     </div>
+                
                     </details></td>
 
-                    <td><a href="Sliki/wallpaper2.jpeg" target="blank"> <img src="Sliki/wallpaper2.jpeg" height="300px" width="300px" alt="#"></a><br>
+                    <td>
+                        <div class="gallery">
+                        <a href="Sliki/wallpaper2.jpeg" data-lightbox="sliki" target="blank"> <img src="Sliki/wallpaper2.jpeg" height="300px" width="300px" alt="#" class=""></a><br>
                         <input onclick="Broj(2)" type="image" name="sl1" class="like" src="Sliki/Like.jpg" height="60px" width="60px" alt="#">
                         <input onclick="otvori(2,2)" type="image" class="like" src="Sliki/comment.jpg" height="60px" width="60px" alt="#" >
+                    </div>
                    <p style="margin-left: 10px"> <label><strong>Likes:</strong> <span id="brlike2">0</span> 
                    </label></p>
                    <details>
@@ -248,9 +266,12 @@
                     </div>
                     </details></td>
 
-                    <td><a href="Sliki/wallpaper3.jpeg" target="blank"> <img src="Sliki/wallpaper3.jpeg" height="300px" width="300px" alt="#"></a><br>
+                    <td>
+                        <div class="gallery">
+                        <a href="Sliki/wallpaper3.jpeg" data-lightbox="sliki" target="blank"> <img src="Sliki/wallpaper3.jpeg" height="300px" width="300px" alt="#"></a><br>
                         <input onclick="Broj(3)" type="image" name="sl1" class="like" src="Sliki/Like.jpg" height="60px" width="60px" alt="#">
                         <input onclick="otvori(3,3)" type="image" class="like" src="Sliki/comment.jpg" height="60px" width="60px" alt="#" >
+                    </div>
                    <p style="margin-left: 10px"> <label><strong>Likes:</strong> <span id="brlike3">0</span> 
                    </label></p>
                    <details>
@@ -259,9 +280,12 @@
                     </div>
                     </details></td>
 
-                    <td><a href="Sliki/wallpaper4.jpeg" target="blank"> <img src="Sliki/wallpaper4.jpeg" height="300px" width="300px" alt="#"></a><br>
+                    <td>
+                        <div class="gallery">
+                        <a href="Sliki/wallpaper4.jpeg" data-lightbox="sliki" target="blank"> <img src="Sliki/wallpaper4.jpeg" height="300px" width="300px" alt="#"></a><br>
                         <input onclick="Broj(4)" type="image" name="sl1" class="like" src="Sliki/Like.jpg" height="60px" width="60px" alt="#">
                         <input onclick="otvori(4,4)" type="image" class="like" src="Sliki/comment.jpg" height="60px" width="60px" alt="#" >
+                    </div>
                    <p style="margin-left: 10px"> <label><strong>Likes:</strong> <span id="brlike4">0</span> 
                    </label></p>
                    <details>
@@ -271,7 +295,11 @@
                     </details></td>
                 </tr>
             </table>
+        
     </section>
+
+
+    
                     
 
             <section id="blog">
